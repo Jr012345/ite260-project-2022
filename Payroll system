@@ -1,0 +1,3135 @@
+package javaapplication19;
+import java.time.LocalDate;
+import java.util.Scanner;
+public class JavaApplication19 {
+
+    
+     
+
+    public static void main(String[] args) {
+		
+		boolean christian = true;
+		String username = "Jerry";
+		String password = "Galarosa";
+		int jerry = 0;
+		
+		
+		
+		
+        while (true) {
+			System.out.println("Please log in");
+			Scanner usm = new Scanner (System.in);
+	        System.out.print("Enter your Username: ");
+	        String username1 = usm.nextLine();
+	        Scanner me = new Scanner (System.in);
+	        System.out.print("Enter your Password: ");
+	        String pass = me.nextLine();
+	         if (pass.equals(password)&& username1.equals(username)) {
+
+	        	 while (true) {
+	        		 
+	        		 int [] incentives={1170,1170,364,1001,312,858,260,715,208,572,156,429,104,286};
+		             String [] sssphilhealth={"SSS:","PhilHealth:"};
+		             String []  employee={"Jonathan Galarosa" , "Earl Salvador" ,
+		                 "Justine Agana","Mac Nery", 
+		                 "Aldrin Espinosa", "Daniel Macabale",
+		                 "Sheiny DeSlacruz","Eduard Sanchez", 
+		                 "Steven Lazar", "Sonic Arthuro"};
+		             String [] Jobposition={"Operation Manager","Chef Operating Officer","Operation Officer","Accounting",
+		             "Marketing","Utility","Ticketing","Tour Guides","Housekeeping","Parking Attendant"};
+                     System.out.print("\nLIST OF EMPLOYEE'S\t\t  JOBPOSITION\t\t\t  RATES\n"
+                     +"1.Jonathan Galarosa\t|\t"+Jobposition[0]+"\t|\t800 per day"
+            + "\n2.Earl Salvador\t\t|\t"+Jobposition[1]+"\t|\t700 per day"
+            + "\n3.Justine Agana\t\t|\t"+Jobposition[2]+"\t|\t600 per day"
+            + "\n4.Mac Nery\t\t|\t"+Jobposition[3]+"\t\t|\t500 per day"
+            + "\n5.Aldrin Espinosa\t|\t"+Jobposition[4]+"\t\t|\t400 per day"
+            + "\n6.Daniel Macabale\t|\t"+Jobposition[5]+"\t\t\t|\t300 per day"
+            + "\n7.Sheiny DeSlacruz\t|\t"+Jobposition[6]+"\t\t|\t200 per day"
+            + "\n8.Eduard Sanchez\t|\t"+Jobposition[7]+"\t\t|\t200 per day"
+            + "\n9.Steven Lazar\t\t|\t"+Jobposition[8]+"\t\t|\t200 per day"
+            + "\n10.Sonic Arthuro\t|\t"+Jobposition[9]+"\t|\t200 per day");
+		                              
+		                    System.out.println(" ");
+		             		Scanner employ = new Scanner (System.in);
+		             		
+		             		while (true) {
+		             		 
+	             			 System.out.print("Enter an employee's number: ");
+		   		             String emply=employ.nextLine();
+		   		             
+		   		             
+		   		             
+		   		             	if (emply.equals("1")){
+		   		             		
+		   		             		
+		   		             	System.out.println("\n"+employee[0]+" | "+Jobposition[0]);
+		   		             	
+		   		             	System.out.print("Select a period\n A. 1st period\n B. 2nd period");
+		   		              	System.out.println("  ");
+		   		              	while(true) {
+			 		               Scanner date=new Scanner (System.in);
+			 		               System.out.print(" > ");
+			 		               String datenow=date.nextLine();
+			 		               
+			 		               if (datenow.equalsIgnoreCase("A")){
+			 		            	   
+				 		               Scanner mon=new Scanner (System.in);
+				 		               System.out.print("Enter a month: ");
+				 		               String month=mon.nextLine();
+				 		               
+				 		               
+
+						                 int deduction = 0;
+						                 
+						                 do {
+						                	 Scanner input1 =new Scanner (System.in);
+						                	 
+						                	 try {
+					                		 System.out.print("Check for absences: ");
+						                	 deduction=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 int overtime = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for overtime: ");
+						                	 overtime=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 int holidays = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for holidays: ");
+						                	 holidays=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 
+						                 int withleave=0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for leave with pay: ");
+						                	 withleave=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+
+						                 int m=13;
+						                 int daily=800;
+						                 int a=daily*holidays;
+                                         int j=a*2;
+						                 int b=daily*overtime;
+						                 int c=daily*withleave;
+						                 int d=m-deduction;
+						                 int y=daily*d;
+						                 int e=daily*deduction;
+						                 int gross=a+b+c;
+						                 int f=a+b+c+daily*m;
+						                 int netpay=a+b+c+y;
+						                 LocalDate dateObject;
+						                 dateObject = LocalDate.now(); 
+						                 System.out.println("\nPeriod: 1st period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[0]+ "\t\t\tPosition: "+Jobposition[0]
+						                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+						                         +"\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e
+						                         +"\n____________________________________________________________________\nTotal deduction:\t\t"+e
+						                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+						                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+gross
+						                 +"\n\nGross Pay:\t"+f+"\n\nNet Pay:\t"+netpay);
+				 		               
+						                 
+						                 Scanner select=new Scanner (System.in);
+						                 System.out.println("Would you like to select another employee? Y/N ");
+						                 
+						                 while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+                                            Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+						                	 
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		   		             		
+			 		               } else if (datenow.equalsIgnoreCase("B")) {
+			 		            	   
+			 		            	   
+			 		            	   
+			 		            	   Scanner mon=new Scanner (System.in);
+			 			               System.out.print("Enter a month\n>> ");
+			 			               String month=mon.nextLine();
+			 			               
+			 			               
+			 			              int deduction = 0;
+						                 
+						                 do {
+						                	 Scanner input1 =new Scanner (System.in);
+						                	 
+						                	 try {
+					                		 System.out.print("Check for absences: ");
+						                	 deduction=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 int overtime = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for overtime: ");
+						                	 overtime=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 int holidays = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for holidays: ");
+						                	 holidays=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 
+						                 int withleave=0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for leave with pay: ");
+						                	 withleave=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+			 			                 
+			 			                 int m=13;
+			 			                 int daily=800;
+			 			                 int a=daily*holidays;
+                                          int j=a*2;
+			 			                 int b=daily*overtime;
+			 			                 int c=daily*withleave;
+			 			                 int d=m-deduction;
+			 			                 int y=daily*d;
+			 			                 int e=daily*deduction;
+			 			                 int f=a+b+c;
+			 			                 int gross=a+b+c+daily*m;
+			 			                 int netpay=a+b+c+y;
+			 			                 int g=netpay-incentives[0]-incentives[1];
+			 			                 int h=e+incentives[0]+incentives[1];
+			 			                 LocalDate dateObject;
+			 			                 dateObject = LocalDate.now(); 
+			 			                 System.out.println("\nPeriod: 2nd period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[0]
+			 			                         + "\t\t\tPosition: "+Jobposition[0]
+			 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+			 			                         +"\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e+""
+			 			                         +"\n"+sssphilhealth[0]+"\t\t\t\t"+incentives[0]+"\n"+sssphilhealth[1]
+			 			                         +"\t\t\t"+incentives[1]+"\n____________________________________________________________________\nTotal deduction:\t\t"+h
+			 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+			 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+f
+			 			                 +"\n\nGross Pay:\t"+gross+"\n\nNet Pay:\t"+g);
+			 			                 
+			 			                 
+			 			                Scanner select=new Scanner (System.in);
+						                 System.out.println("Would you like to select another employee? Y/N ");
+						                 
+						                 while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+                                            
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+                                            Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+
+
+                                            
+						                	
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+			 		            	   
+			 		            	   
+			 		          
+			 		               } else { System.out.println("Invalid Input"); }
+			 		               
+			 		               
+			 		               
+			 		               
+			 		           if (jerry >= 1) {jerry--; break;}    
+		 		               }	
+		   		             		
+		   		             
+		   		             
+		   		             	} else if (emply.equals("2")){
+		   		             		
+								System.out.println("\n"+employee[1]+" | "+Jobposition[1]);
+		   		             	
+		   		             	System.out.print("Select a period\n A. 1st period\n B. 2nd period");
+		   		              	System.out.println("  ");
+		   		              	while(true) {
+		   		                   Scanner date=new Scanner (System.in);
+			 		               System.out.print(" > ");
+			 		               String datenow=date.nextLine();
+			 		               
+			 		              if (datenow.equalsIgnoreCase("A")){
+					            	   
+			 			               Scanner mon=new Scanner (System.in);
+			 			               System.out.print("Enter a month\n>> ");
+			 			               String month=mon.nextLine();
+			 			               
+			 			               
+			 			               int deduction=0;
+			 			               do {
+			 			                	 Scanner input1=new Scanner (System.in);
+			 			                	 
+			 			                	 try {
+			 			                	 System.out.print("Check for absences: ");
+			 			                	 deduction=input1.nextInt();
+			 			                	 christian = false;
+			 			                 
+			 			                	 } catch (Exception e) {
+			 			                		 System.out.println("Please enter a number, please try again.");
+			 			                		 christian = true;
+			 			                 
+			 			                	 }
+			 			                 
+			 			                 
+			 			                 } while (christian);
+			 			               
+			 			               int overtime=0;
+			 			               do {
+			 			                	 Scanner input1=new Scanner (System.in);
+			 			                	 
+			 			                	 try {
+			 			                	 System.out.print("Check for overtime: ");
+			 			                	 overtime=input1.nextInt();
+			 			                	 christian = false;
+			 			                 
+			 			                	 } catch (Exception e) {
+			 			                		 System.out.println("Please enter a number, please try again.");
+			 			                		 christian = true;
+			 			                 
+			 			                	 }
+			 			                 
+			 			                 
+			 			                 } while (christian);
+			 			               
+			 			               
+			 			                 
+			 			                 int holidays=0;
+			 			                 do {
+			 			                	 Scanner input1=new Scanner (System.in);
+			 			                	 
+			 			                	 try {
+			 			                	 System.out.print("Check for holidays: ");
+			 			                	 holidays=input1.nextInt();
+			 			                	 christian = false;
+			 			                 
+			 			                	 } catch (Exception e) {
+			 			                		 System.out.println("Please enter a number, please try again.");
+			 			                		 christian = true;
+			 			                 
+			 			                	 }
+			 			                 
+			 			                 
+			 			                 } while (christian);
+			 			               
+			 			                
+			 			                int withleave=0;
+			 			                do {
+			 			                	 Scanner input1=new Scanner (System.in);
+			 			                	 
+			 			                	 try {
+			 			                	 System.out.print("Check for leave with pay: ");
+			 			                	 withleave=input1.nextInt();
+			 			                	 christian = false;
+			 			                 
+			 			                	 } catch (Exception e) {
+			 			                		 System.out.println("Please enter a number, please try again.");
+			 			                		 christian = true;
+			 			                 
+			 			                	 }
+			 			                 
+			 			                 
+			 			                 } while (christian);
+			 			               
+			 			                
+			 			                 int m=13;
+			 			                 int daily=700;
+			 			                 int a=daily*holidays;
+                                          int j=a*2;
+			 			                 int b=daily*overtime;
+			 			                 int c=daily*withleave;
+			 			                 int d=m-deduction;
+			 			                 int y=daily*d;
+			 			                 int e=daily*deduction;
+			 			                 int gross=a+b+c;
+			 			                 int f=a+b+c+daily*m;
+			 			                 int netpay=a+b+c+y;
+			 			                 LocalDate dateObject;
+			 			                 dateObject = LocalDate.now(); 
+			 			                 System.out.println("\nPeriod: 1st period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[1]+ "\t\t\tPosition: "+Jobposition[1]
+			 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+			 			                         + "\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e
+			 			                         +"\n____________________________________________________________________\nTotal deduction:\t\t"+e
+			 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+			 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+gross
+			 			                 +"\n\nGross Pay:\t"+f+"\n\nNet Pay:\t"+netpay); 
+			 			                 
+			 			                
+			 			                 
+			 			                Scanner select=new Scanner (System.in);
+			 			                System.out.println("Would you like to select another employee? Y/N ");
+			 			                while (true) {
+							                 System.out.print("  > ");
+							                 String selecta=select.nextLine();
+							                 
+							                 if (selecta.equalsIgnoreCase("y")) {
+							                	 jerry+=2;
+					 		                      break;
+							                 } else if (selecta.equalsIgnoreCase("n")) {
+                                                Scanner chris=new Scanner (System.in);
+                                                System.out.print("Do you Want To Log Out Y/N?"); 
+                                                String  logout = chris.nextLine();   
+    
+                                                if (logout.equalsIgnoreCase("y")){
+                                                    jerry+=4;
+                                                    System.out.println("Logged Out!");
+                                                    break;
+    
+                                                } else if (logout.equalsIgnoreCase("n")) {
+                                                    jerry+=2;
+                                                    break;
+    
+    
+                                                } else { System.out.println("Invalid Input");}
+							                 } else { System.out.println("Invalid input"); } 
+							                 
+							                 }
+			 			                 
+			 		              } else if (datenow.equalsIgnoreCase("B")) {  
+			 		            	  
+			 		            	  
+			 		            	 Scanner mon=new Scanner (System.in);
+			 			               System.out.print("Enter a month\n>> ");
+			 			               String month=mon.nextLine();
+			 			               
+			 			               
+			 			              int deduction = 0;
+						                 
+						                 do {
+						                	 Scanner input1 =new Scanner (System.in);
+						                	 
+						                	 try {
+					                		 System.out.print("Check for absences: ");
+						                	 deduction=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 int overtime = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for overtime: ");
+						                	 overtime=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 int holidays = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for holidays: ");
+						                	 holidays=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 
+						                 int withleave=0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for leave with pay: ");
+						                	 withleave=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+			 			               
+			 			               
+			 			               
+			 			               
+			 			                 int m=13;
+			 			                 int daily=700;
+			 			                 int a=daily*holidays;
+                                          int j=a*2;
+			 			                 int b=daily*overtime;
+			 			                 int c=daily*withleave;
+			 			                 int d=m-deduction;
+			 			                 int y=daily*d;
+			 			                 int e=daily*deduction;
+			 			                 int f=a+b+c;
+			 			                 int gross=a+b+c+daily*m;
+			 			                 int netpay=a+b+c+y;
+			 			                 int g=netpay-incentives[2]-incentives[3];
+			 			                 int h=e+incentives[2]+incentives[3];
+			 			                 LocalDate dateObject;
+			 			                 dateObject = LocalDate.now(); 
+			 			                 System.out.println("\nPeriod: 2nd period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[1]
+			 			                         + "\t\t\tPosition: "+Jobposition[1]
+			 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+			 			                         +"\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e+""
+			 			                         +"\n"+sssphilhealth[0]+"\t\t\t\t"+incentives[2]+"\n"+sssphilhealth[1]
+			 			                         +"\t\t\t"+incentives[3]+"\n____________________________________________________________________\nTotal deduction:\t\t"+h
+			 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+			 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+f+"\n\nGross Pay:\t"+gross+"\n\nNet Pay:\t"+g);
+			 		            	  
+			 			                Scanner select=new Scanner (System.in);
+			 			                System.out.println("Would you like to select another employee? Y/N ");
+			 			                while (true) {
+							                 System.out.print("  > ");
+							                 String selecta=select.nextLine();
+							                 
+							                 if (selecta.equalsIgnoreCase("y")) {
+							                	 jerry+=2;
+					 		                      break;
+							                 } else if (selecta.equalsIgnoreCase("n")) {
+							                	Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+							                 } else { System.out.println("Invalid input"); } 
+							                 
+							                 }
+			 		            	  
+			 		            	  
+		   		              		
+		   		             		
+			 		              } else { System.out.println("Invalid Input"); }
+			 		              
+			 		              
+			 		              
+		   		              	if (jerry >= 1) {jerry--; break;}	
+		   		              	}	
+		   		             		
+		             		
+		   		             	} else if (emply.equals("3")){
+		   		             		
+		   		             	System.out.println("\n"+employee[2]+" | "+Jobposition[2]);
+		   		             	
+		   		             	System.out.print("Select a period\n A. 1st period\n B. 2nd period");
+		   		              	System.out.println("  ");
+		   		                while(true) {
+		   		                   Scanner date=new Scanner (System.in);
+			 		               System.out.print(" > ");
+			 		               String datenow=date.nextLine();
+		   		             	   
+			 		              if (datenow.equalsIgnoreCase("A")){
+			 		            	  
+			 		            	 Scanner mon=new Scanner (System.in);
+			 			               System.out.print("Enter a month\n>> ");
+			 			               String month=mon.nextLine();
+			 			               
+			 			               
+			 			               
+			 			              int deduction = 0;
+						                 
+						                 do {
+						                	 Scanner input1 =new Scanner (System.in);
+						                	 
+						                	 try {
+					                		 System.out.print("Check for absences: ");
+						                	 deduction=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 int overtime = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for overtime: ");
+						                	 overtime=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 int holidays = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for holidays: ");
+						                	 holidays=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 
+						                 int withleave=0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for leave with pay: ");
+						                	 withleave=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+			 			               
+			 			                 int m=13;
+			 			                 int daily=600;
+			 			                 int a=daily*holidays;
+                                          int j=a*2;
+			 			                 int b=daily*overtime;
+			 			                 int c=daily*withleave;
+			 			                 int d=m-deduction;
+			 			                 int y=daily*d;
+			 			                 int e=daily*deduction;
+			 			                 int gross=a+b+c;
+			 			                 int f=a+b+c+daily*m;
+			 			                 int netpay=a+b+c+y;
+			 			                 LocalDate dateObject;
+			 			                 dateObject = LocalDate.now(); 
+			 			                 System.out.println("\nPeriod: 1st period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[2]+ "\t\t\tPosition: "+Jobposition[2]
+			 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+			 			                         + "\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e
+			 			                         +"\n____________________________________________________________________\nTotal deduction:\t\t"+e
+			 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+			 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+gross
+			 			                 +"\n\nGross Pay:\t"+f+"\n\nNet Pay:\t"+netpay);
+			 			                 
+			 			                Scanner select=new Scanner (System.in);
+			 			                System.out.println("Would you like to select another employee? Y/N ");
+			 			                while (true) {
+							                 System.out.print("  > ");
+							                 String selecta=select.nextLine();
+							                 
+							                 if (selecta.equalsIgnoreCase("y")) {
+							                	 jerry+=2;
+					 		                      break;
+							                 } else if (selecta.equalsIgnoreCase("n")) {
+                                                Scanner chris=new Scanner (System.in);
+                                                System.out.print("Do you Want To Log Out Y/N?"); 
+                                                String  logout = chris.nextLine();   
+    
+                                                if (logout.equalsIgnoreCase("y")){
+                                                    jerry+=4;
+                                                    System.out.println("Logged Out!");
+                                                    break;
+    
+                                                } else if (logout.equalsIgnoreCase("n")) {
+                                                    jerry+=2;
+                                                    break;
+    
+    
+                                                } else { System.out.println("Invalid Input");}
+							                 } else { System.out.println("Invalid input"); } 
+							                 
+							                 }
+			 		            	  
+			 		            	  
+			 		            	  
+		   		             	
+			 		              } else if (datenow.equalsIgnoreCase("B")){
+			 		            	  
+			 		            	 Scanner mon=new Scanner (System.in);
+			 			               System.out.print("Enter a month\n>> ");
+			 			               String month=mon.nextLine();
+			 			               
+			 			               
+			 			              int deduction = 0;
+						                 
+						                 do {
+						                	 Scanner input1 =new Scanner (System.in);
+						                	 
+						                	 try {
+					                		 System.out.print("Check for absences: ");
+						                	 deduction=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 int overtime = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for overtime: ");
+						                	 overtime=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 int holidays = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for holidays: ");
+						                	 holidays=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 
+						                 int withleave=0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for leave with pay: ");
+						                	 withleave=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+			 			                 int m=13;
+			 			                 int daily=600;
+			 			                 int a=daily*holidays;
+                                          int j=a*2;
+			 			                 int b=daily*overtime;
+			 			                 int c=daily*withleave;
+			 			                 int d=m-deduction;
+			 			                 int y=daily*d;
+			 			                 int e=daily*deduction;
+			 			                 int f=a+b+c;
+			 			                 int gross=a+b+c+daily*m;
+			 			                 int netpay=a+b+c+y;
+			 			                 int g=netpay-incentives[4]-incentives[5];
+			 			                 int h=e+incentives[4]+incentives[5];
+			 			                 LocalDate dateObject;
+			 			                 dateObject = LocalDate.now(); 
+			 			                 System.out.println("\nPeriod: 2nd period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[2]
+			 			                         + "\t\t\tPosition: "+Jobposition[2]
+			 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+			 			                         +"\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e+""
+			 			                         +"\n"+sssphilhealth[0]+"\t\t\t\t"+incentives[4]+"\n"+sssphilhealth[1]
+			 			                         +"\t\t\t"+incentives[5]+"\n____________________________________________________________________\nTotal deduction:\t\t"+h
+			 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+			 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+f
+			 			                 +"\n\nGross Pay:\t"+gross+"\n\nNet Pay:\t"+g);
+			 			                 
+			 			                Scanner select=new Scanner (System.in);
+			 			                System.out.println("Would you like to select another employee? Y/N ");
+			 			                while (true) {
+							                 System.out.print("  > ");
+							                 String selecta=select.nextLine();
+							                 
+							                 if (selecta.equalsIgnoreCase("y")) {
+							                	 jerry+=2;
+					 		                      break;
+							                 } else if (selecta.equalsIgnoreCase("n")) {
+							                	Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+							                 } else { System.out.println("Invalid input"); } 
+							                 
+							                 }
+			 		            	  
+			 		            	  
+			 		            	  
+			 		            	  
+			 		            	 
+			 		            
+			 		              } else { System.out.println("Invalid Input"); }
+			 		              
+			 		              
+			 		           if (jerry >= 1) {jerry--; break;}
+		   		               }  	
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		             		
+		   		             	} else if (emply.equals("4")){
+		   		             		
+		   		             	System.out.println("\n"+employee[3]+" | "+Jobposition[3]);
+		   		             	
+		   		             	System.out.print("Select a period\n A. 1st period\n B. 2nd period");
+		   		              	System.out.println("  ");
+		   		             	
+	   		              		while(true) {
+	   		                    Scanner date=new Scanner (System.in);
+		 		                System.out.print(" > ");
+		 		                String datenow=date.nextLine();
+		   		             		
+		 		               if (datenow.equalsIgnoreCase("A")){
+		 			               Scanner mon=new Scanner (System.in);
+		 			               System.out.print("Enter a month\n>> ");
+		 			               String month=mon.nextLine();
+		 			               
+		 			               
+		 			              int deduction = 0;
+					                 
+					                 do {
+					                	 Scanner input1 =new Scanner (System.in);
+					                	 
+					                	 try {
+				                		 System.out.print("Check for absences: ");
+					                	 deduction=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 int overtime = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for overtime: ");
+					                	 overtime=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 int holidays = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for holidays: ");
+					                	 holidays=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 
+					                 int withleave=0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for leave with pay: ");
+					                	 withleave=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian); 
+		 			               
+		 			                 int m=13;
+		 			                 int daily=500;
+		 			                 int a=daily*holidays;
+                                      int j=a*2;
+		 			                 int b=daily*overtime;
+		 			                 int c=daily*withleave;
+		 			                 int d=m-deduction;
+		 			                 int y=daily*d;
+		 			                 int e=daily*deduction;
+		 			                 int gross=a+b+c;
+		 			                 int f=a+b+c+daily*m;
+		 			                 int netpay=a+b+c+y;
+		 			                 LocalDate dateObject;
+		 			                 dateObject = LocalDate.now(); 
+		 			                 System.out.println("\nPeriod: 1st period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[3]+ "\t\t\t\tPosition: "+Jobposition[3]
+		 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+		 			                         + "\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e
+		 			                         +"\n____________________________________________________________________\nTotal deduction:\t\t"+e
+		 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+		 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+gross
+		 			                 +"\n\nGross Pay:\t"+f+"\n\nNet Pay:\t"+netpay);
+		 			                 
+		 			                Scanner select=new Scanner (System.in);
+		 			                System.out.println("Would you like to select another employee? Y/N ");
+		 			                while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+                                            Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		 		                
+		 		               } else if (datenow.equalsIgnoreCase("B")){
+		 		            	   
+		 		            	   
+		 		            	  Scanner mon=new Scanner (System.in);
+		 			               System.out.print("Enter a month\n>> ");
+		 			               String month=mon.nextLine();
+		 			               
+		 			              int deduction = 0;
+					                 
+					                 do {
+					                	 Scanner input1 =new Scanner (System.in);
+					                	 
+					                	 try {
+				                		 System.out.print("Check for absences: ");
+					                	 deduction=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 int overtime = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for overtime: ");
+					                	 overtime=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 int holidays = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for holidays: ");
+					                	 holidays=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 
+					                 int withleave=0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for leave with pay: ");
+					                	 withleave=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);  
+		 			               
+		 			                 int m=13;
+		 			                 int daily=500;
+		 			                 int a=daily*holidays;
+                                      int j=a*2;
+		 			                 int b=daily*overtime;
+		 			                 int c=daily*withleave;
+		 			                 int d=m-deduction;
+		 			                 int y=daily*d;
+		 			                 int e=daily*deduction;
+		 			                 int f=a+b+c;
+		 			                 int gross=a+b+c+daily*m;
+		 			                 int netpay=a+b+c+y;
+		 			                 int g=netpay-incentives[6]-incentives[7];
+		 			                 int h=e+incentives[6]+incentives[7];
+		 			                 LocalDate dateObject;
+		 			                 dateObject = LocalDate.now(); 
+		 			                 System.out.println("\nPeriod: 2nd period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[3]
+		 			                         + "\t\t\tPosition: "+Jobposition[3]
+		 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+		 			                         +"\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e+""
+		 			                         +"\n"+sssphilhealth[0]+"\t\t\t\t"+incentives[6]+"\n"+sssphilhealth[1]
+		 			                         +"\t\t\t"+incentives[7]+"\n____________________________________________________________________\nTotal deduction:\t\t"+h
+		 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+		 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+f
+		 			                 +"\n\nGross Pay:\t"+gross+"\n\nNet Pay:\t"+g);
+		 			                 
+		 			                Scanner select=new Scanner (System.in);
+		 			                System.out.println("Would you like to select another employee? Y/N ");
+		 			                while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+						                	Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		 		            	   
+		 		            	   
+		 		                
+		 		               } else { System.out.println("Invalid Input"); }
+		 		                
+		 		                if (jerry >= 1) {jerry--; break;}
+		   		               }  	
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		             		
+		   		             	} else if (emply.equals("5")){
+		   		             		
+   		             			System.out.println("\n"+employee[4]+" | "+Jobposition[4]);
+		   		             	
+		   		             	System.out.print("Select a period\n A. 1st period\n B. 2nd period");
+		   		              	System.out.println("  ");
+		   		             		
+	   		              		while(true) {
+	   		                    Scanner date=new Scanner (System.in);
+		 		                System.out.print(" > ");
+		 		                String datenow=date.nextLine();
+		 		                
+		 		               if (datenow.equalsIgnoreCase("A")){
+		 		            	  Scanner mon=new Scanner (System.in);
+		 			               System.out.print("Enter a month\n>> ");
+		 			               String month=mon.nextLine();
+		 			               
+		 			               
+		 			              int deduction = 0;
+					                 
+					                 do {
+					                	 Scanner input1 =new Scanner (System.in);
+					                	 
+					                	 try {
+				                		 System.out.print("Check for absences: ");
+					                	 deduction=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 int overtime = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for overtime: ");
+					                	 overtime=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 int holidays = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for holidays: ");
+					                	 holidays=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 
+					                 int withleave=0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for leave with pay: ");
+					                	 withleave=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);  
+		 			               
+		 			                 int m=13;
+		 			                 int daily=400;
+		 			                 int a=daily*holidays;
+                                      int j=a*2;
+		 			                 int b=daily*overtime;
+		 			                 int c=daily*withleave;
+		 			                 int d=m-deduction;
+		 			                 int y=daily*d;
+		 			                 int e=daily*deduction;
+		 			                 int gross=a+b+c;
+		 			                 int f=a+b+c+daily*m;
+		 			                 int netpay=a+b+c+y;
+		 			                 LocalDate dateObject;
+		 			                 dateObject = LocalDate.now(); 
+		 			                 System.out.println("\nPeriod: 1st period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[4]+ "\t\t\tPosition: "+Jobposition[4]
+		 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+		 			                         + "\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e
+		 			                         +"\n____________________________________________________________________\nTotal deduction:\t\t"+e
+		 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+		 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+gross
+		 			                 +"\n\nGross Pay:\t"+f+"\n\nNet Pay:\t"+netpay);
+		 			                 
+		 			                Scanner select=new Scanner (System.in);
+		 			                System.out.println("Would you like to select another employee? Y/N ");
+		 			                
+		 			                while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+						                	Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		 		                
+		 		               } else if (datenow.equalsIgnoreCase("B")){
+		 		            	   
+		 		            	  Scanner mon=new Scanner (System.in);
+		 			               System.out.print("Enter a month\n>> ");
+		 			               String month=mon.nextLine();
+		 			               
+		 			               
+		 			              int deduction = 0;
+					                 
+					                 do {
+					                	 Scanner input1 =new Scanner (System.in);
+					                	 
+					                	 try {
+				                		 System.out.print("Check for absences: ");
+					                	 deduction=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 int overtime = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for overtime: ");
+					                	 overtime=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 int holidays = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for holidays: ");
+					                	 holidays=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 
+					                 int withleave=0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for leave with pay: ");
+					                	 withleave=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);  
+		 			               
+		 			                 int m=13;
+		 			                 int daily=400;
+		 			                 int a=daily*holidays;
+                                      int j=a*2;
+		 			                 int b=daily*overtime;
+		 			                 int c=daily*withleave;
+		 			                 int d=m-deduction;
+		 			                 int y=daily*d;
+		 			                 int e=daily*deduction;
+		 			                 int f=a+b+c;
+		 			                 int gross=a+b+c+daily*m;
+		 			                 int netpay=a+b+c+y;
+		 			                 int g=netpay-incentives[8]-incentives[9];
+		 			                 int h=e+incentives[8]+incentives[9];
+		 			                 LocalDate dateObject;
+		 			                 dateObject = LocalDate.now(); 
+		 			                 System.out.println("\nPeriod: 2nd period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[4]
+		 			                         + "\t\t\tPosition: "+Jobposition[4]
+		 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+		 			                         +"\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e+""
+		 			                         +"\n"+sssphilhealth[0]+"\t\t\t\t"+incentives[8]+"\n"+sssphilhealth[1]
+		 			                         +"\t\t\t"+incentives[9]+"\n____________________________________________________________________\nTotal deduction:\t\t"+h
+		 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+		 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+f
+		 			                 +"\n\nGross Pay:\t"+gross+"\n\nNet Pay:\t"+g);
+		 			                 
+		 			                Scanner select=new Scanner (System.in);
+		 			                System.out.println("Would you like to select another employee? Y/N ");
+		 			                while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+						                	Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		 		            	   
+		 		            	   
+		 		                
+		 			               
+		   		               } else { System.out.println("Invalid Input"); }  	
+		 		            	   
+		 			                 
+		 			                 
+		   		             		
+		   		            
+		 		                
+		 		               if (jerry >= 1) {jerry--; break;}
+			   		               }  		
+		   		             		
+		             		
+		   		             	} else if (emply.equals("6")){
+		   		             		
+		   		             		
+                                
+		   		             	System.out.println("\n"+employee[5]+" | "+Jobposition[5]);
+		   		             	
+		   		                System.out.print("Select a period\n A. 1st period\n B. 2nd period");
+		   		              	System.out.println("  ");
+		   		              	
+		   		             while(true) {
+		   		                    Scanner date=new Scanner (System.in);
+			 		                System.out.print(" > ");
+			 		                String datenow=date.nextLine();
+			 		                
+			 		                
+			 		               if (datenow.equalsIgnoreCase("A")){
+			 		            	  Scanner mon=new Scanner (System.in);
+			 			               System.out.print("Enter a month\n>> ");
+			 			               String month=mon.nextLine();
+			 			               
+			 			              int deduction = 0;
+						                 
+						                 do {
+						                	 Scanner input1 =new Scanner (System.in);
+						                	 
+						                	 try {
+					                		 System.out.print("Check for absences: ");
+						                	 deduction=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 int overtime = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for overtime: ");
+						                	 overtime=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 int holidays = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for holidays: ");
+						                	 holidays=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 
+						                 int withleave=0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for leave with pay: ");
+						                	 withleave=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);  
+			 			               
+			 			                 int m=13;
+			 			                 int daily=300;
+			 			                 int a=daily*holidays;
+                                          int j=a*2;
+			 			                 int b=daily*overtime;
+			 			                 int c=daily*withleave;
+			 			                 int d=m-deduction;
+			 			                 int y=daily*d;
+			 			                 int e=daily*deduction;
+			 			                 int gross=a+b+c;
+			 			                 int f=a+b+c+daily*m;
+			 			                 int netpay=a+b+c+y;
+			 			                 LocalDate dateObject;
+			 			                 dateObject = LocalDate.now(); 
+			 			                 System.out.println("\nPeriod: 1st period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[5]+ "\t\t\tPosition: "+Jobposition[5]
+			 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+			 			                         + "\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e
+			 			                         +"\n____________________________________________________________________\nTotal deduction:\t\t"+e
+			 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+			 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+gross
+			 			                 +"\n\nGross Pay:\t"+f+"\n\nNet Pay:\t"+netpay);
+			 			                 
+			 			                Scanner select=new Scanner (System.in);
+			 			                System.out.println("Would you like to select another employee? Y/N ");
+			 			                
+			 			               while (true) {
+							                 System.out.print("  > ");
+							                 String selecta=select.nextLine();
+							                 
+							                 if (selecta.equalsIgnoreCase("y")) {
+							                	 jerry+=2;
+					 		                      break;
+							                 } else if (selecta.equalsIgnoreCase("n")) {
+							                	Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+							                 } else { System.out.println("Invalid input"); } 
+							                 
+							                 }
+			 		                
+			 		               } else if (datenow.equalsIgnoreCase("B")){
+			 		            	   
+			 		            	  Scanner mon=new Scanner (System.in);
+			 			               System.out.print("Enter a month\n>> ");
+			 			               String month=mon.nextLine();
+			 			                 
+			 			              int deduction = 0;
+						                 
+						                 do {
+						                	 Scanner input1 =new Scanner (System.in);
+						                	 
+						                	 try {
+					                		 System.out.print("Check for absences: ");
+						                	 deduction=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 int overtime = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for overtime: ");
+						                	 overtime=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 int holidays = 0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for holidays: ");
+						                	 holidays=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+						                 
+						                 
+						                 
+						                 
+						                 int withleave=0;
+						                 do {
+						                	 Scanner input1=new Scanner (System.in);
+						                	 
+						                	 try {
+						                	 System.out.print("Check for leave with pay: ");
+						                	 withleave=input1.nextInt();
+						                	 christian = false;
+						                 
+						                	 } catch (Exception e) {
+						                		 System.out.println("Please enter a number, please try again.");
+						                		 christian = true;
+						                 
+						                	 }
+						                 
+						                 
+						                 } while (christian);
+			 			               
+			 			                 int m=13;
+			 			                 int daily=300;
+			 			                 int a=daily*holidays;
+                                          int j=a*2;
+			 			                 int b=daily*overtime;
+			 			                 int c=daily*withleave;
+			 			                 int d=m-deduction;
+			 			                 int y=daily*d;
+			 			                 int e=daily*deduction;
+			 			                 int f=a+b+c;
+			 			                 int gross=a+b+c+daily*m;
+			 			                 int netpay=a+b+c+y;
+			 			                 int g=netpay-incentives[10]-incentives[11];
+			 			                 int h=e+incentives[10]+incentives[11];
+			 			                 LocalDate dateObject;
+			 			                 dateObject = LocalDate.now(); 
+			 			                 System.out.println("\nPeriod: 2nd period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[5]
+			 			                         + "\t\t\tPosition: "+Jobposition[5]
+			 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+			 			                         +"\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e+""
+			 			                         +"\n"+sssphilhealth[0]+"\t\t\t\t"+incentives[10]+"\n"+sssphilhealth[1]
+			 			                         +"\t\t\t"+incentives[11]+"\n____________________________________________________________________\nTotal deduction:\t\t"+h
+			 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+			 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+f
+			 			                 +"\n\nGross Pay:\t"+gross+"\n\nNet Pay:\t"+g);
+			 			                 
+			 			                Scanner select=new Scanner (System.in);
+			 			                System.out.println("Would you like to select another employee? Y/N ");
+			 			                while (true) {
+							                 System.out.print("  > ");
+							                 String selecta=select.nextLine();
+							                 
+							                 if (selecta.equalsIgnoreCase("y")) {
+							                	 jerry+=2;
+					 		                      break;
+							                 } else if (selecta.equalsIgnoreCase("n")) {
+							                	Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+							                 } else { System.out.println("Invalid input"); } 
+							                 
+			 			                }
+			 			                
+			 		               } else { System.out.println("Invalid Input"); }   
+			 			                
+			 		                
+			 			               
+					 		    if (jerry >= 1) {jerry--; break;}
+						   		  } 
+		   		              	
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		             		
+		   		             	} else if (emply.equals("7")){
+		   		             		
+		   		             	System.out.println("\n"+employee[6]+" | "+Jobposition[6]);
+		   		             	
+		   		                System.out.print("Select a period\n A. 1st period\n B. 2nd period");
+		   		              	System.out.println("  ");
+		   		              	
+			   		            while(true) {
+	   		                    Scanner date=new Scanner (System.in);
+		 		                System.out.print(" > ");
+		 		                String datenow=date.nextLine();
+		 		                
+		 		                
+		 		               if (datenow.equalsIgnoreCase("A")){
+		 			               Scanner mon=new Scanner (System.in);
+		 			               System.out.print("Enter a month\n>> ");
+		 			               String month=mon.nextLine();
+		 			               
+		 			               
+		 			              int deduction = 0;
+					                 
+					                 do {
+					                	 Scanner input1 =new Scanner (System.in);
+					                	 
+					                	 try {
+				                		 System.out.print("Check for absences: ");
+					                	 deduction=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 int overtime = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for overtime: ");
+					                	 overtime=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 int holidays = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for holidays: ");
+					                	 holidays=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 
+					                 int withleave=0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for leave with pay: ");
+					                	 withleave=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);  
+		 			               
+		 			                 int m=13;
+		 			                 int daily=200;
+		 			                 int a=daily*holidays;
+                                      int j=a*2;
+		 			                 int b=daily*overtime;
+		 			                 int c=daily*withleave;
+		 			                 int d=m-deduction;
+		 			                 int y=daily*d;
+		 			                 int e=daily*deduction;
+		 			                 int gross=a+b+c;
+		 			                 int f=a+b+c+daily*m;
+		 			                 int netpay=a+b+c+y;
+		 			                 LocalDate dateObject;
+		 			                 dateObject = LocalDate.now(); 
+		 			                 System.out.println("\nPeriod: 1st period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[6]+ "\t\t\tPosition: "+Jobposition[6]
+		 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+		 			                         + "\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e
+		 			                         +"\n____________________________________________________________________\nTotal deduction:\t\t"+e
+		 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+		 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+gross
+		 			                 +"\n\nGross Pay:\t"+f+"\n\nNet Pay:\t"+netpay);
+		 		                 
+		 			                 
+		 			                Scanner select=new Scanner (System.in);
+		 			                System.out.println("Would you like to select another employee? Y/N ");
+		 			                while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+						                	Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		 		                
+		 		               } else if (datenow.equalsIgnoreCase("B")){
+		   		             		
+		 		            	  Scanner mon=new Scanner (System.in);
+		 			               System.out.print("Enter a month\n>> ");
+		 			               String month=mon.nextLine();
+		 			                 
+		 			              int deduction = 0;
+					                 
+					                 do {
+					                	 Scanner input1 =new Scanner (System.in);
+					                	 
+					                	 try {
+				                		 System.out.print("Check for absences: ");
+					                	 deduction=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 int overtime = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for overtime: ");
+					                	 overtime=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 int holidays = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for holidays: ");
+					                	 holidays=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 
+					                 int withleave=0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for leave with pay: ");
+					                	 withleave=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+		 			               
+		 			                 int m=13;
+		 			                 int daily=200;
+		 			                 int a=daily*holidays;
+                                      int j=a*2;
+		 			                 int b=daily*overtime;
+		 			                 int c=daily*withleave;
+		 			                 int d=m-deduction;
+		 			                 int y=daily*d;
+		 			                 int e=daily*deduction;
+		 			                 int f=a+b+c;
+		 			                 int gross=a+b+c+daily*m;
+		 			                 int netpay=a+b+c+y;
+		 			                 int g=netpay-incentives[12]-incentives[13];
+		 			                 int h=e+incentives[12]+incentives[13];
+		 			                 LocalDate dateObject;
+		 			                 dateObject = LocalDate.now(); 
+		 			                 System.out.println("\nPeriod: 2nd period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[6]
+		 			                         + "\t\t\tPosition: "+Jobposition[6]
+		 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+		 			                         +"\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e+""
+		 			                         +"\n"+sssphilhealth[0]+"\t\t\t\t"+incentives[12]+"\n"+sssphilhealth[1]
+		 			                         +"\t\t\t"+incentives[13]+"\n____________________________________________________________________\nTotal deduction:\t\t"+h
+		 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+		 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+f
+		 			                 +"\n\nGross Pay:\t"+gross+"\n\nNet Pay:\t"+g);
+		 			                 
+		 			                Scanner select=new Scanner (System.in);
+		 			                System.out.println("Would you like to select another employee? Y/N ");
+		 			                while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+                                            Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		 		            	   
+		   		             		
+		 		              } else { System.out.println("Invalid Input"); }	
+		   		             		
+		   		             		
+		   		             	if (jerry >= 1) {jerry--; break;}
+						   		  } 
+		   		             		
+		   		          
+		   		             		
+		   		             		
+		             		
+		   		             	} else if (emply.equals("8")){
+		   		             		
+		   		             	System.out.println("\n"+employee[7]+" | "+Jobposition[7]);
+		   		             	
+		   		                System.out.print("Select a period\n A. 1st period\n B. 2nd period");
+		   		              	System.out.println("  ");
+		   		              	
+		   		              	while(true) {
+	   		                    Scanner date=new Scanner (System.in);
+		 		                System.out.print(" > ");
+		 		                String datenow=date.nextLine();
+		 		                
+		 		               if (datenow.equalsIgnoreCase("A")){
+		 			               Scanner mon=new Scanner (System.in);
+		 			               System.out.print("Enter a month\n>> ");
+		 			               String month=mon.nextLine();
+		 			               
+		 			              int deduction = 0;
+					                 
+					                 do {
+					                	 Scanner input1 =new Scanner (System.in);
+					                	 
+					                	 try {
+				                		 System.out.print("Check for absences: ");
+					                	 deduction=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 int overtime = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for overtime: ");
+					                	 overtime=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 int holidays = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for holidays: ");
+					                	 holidays=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 
+					                 int withleave=0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for leave with pay: ");
+					                	 withleave=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+		 			                 
+		 			                 int m=13;
+		 			                 int daily=200;
+		 			                 int a=daily*holidays;
+                                      int j=a*2;
+		 			                 int b=daily*overtime;
+		 			                 int c=daily*withleave;
+		 			                 int d=m-deduction;
+		 			                 int y=daily*d;
+		 			                 int e=daily*deduction;
+		 			                 int gross=a+b+c;
+		 			                 int f=a+b+c+daily*m;
+		 			                 int netpay=a+b+c+y;
+		 			                 LocalDate dateObject;
+		 			                 dateObject = LocalDate.now(); 
+		 			                 System.out.println("\nPeriod: 1st period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[7]+ "\t\t\tPosition: "+Jobposition[7]
+		 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+		 			                         + "\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e
+		 			                         +"\n____________________________________________________________________\nTotal deduction:\t\t"+e
+		 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+		 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+gross
+		 			                 +"\n\nGross Pay:\t"+f+"\n\nNet Pay:\t"+netpay);
+		 			                 
+		 			                Scanner select=new Scanner (System.in);
+		 			                System.out.println("Would you like to select another employee? Y/N ");
+		 			                while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+						                	Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		   		              	
+		   		              	
+		 		               } else if (datenow.equalsIgnoreCase("B")) {
+		 		            	   
+		 		            	  Scanner mon=new Scanner (System.in);
+		 			               System.out.print("Enter a month\n>> ");
+		 			               String month=mon.nextLine();
+		 			               
+		 			              int deduction = 0;
+					                 
+					                 do {
+					                	 Scanner input1 =new Scanner (System.in);
+					                	 
+					                	 try {
+				                		 System.out.print("Check for absences: ");
+					                	 deduction=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 int overtime = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for overtime: ");
+					                	 overtime=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 int holidays = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for holidays: ");
+					                	 holidays=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 
+					                 int withleave=0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for leave with pay: ");
+					                	 withleave=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+		 			                 int m=13;
+		 			                 int daily=200;
+		 			                 int a=daily*holidays;
+                                      int j=a*2;
+		 			                 int b=daily*overtime;
+		 			                 int c=daily*withleave;
+		 			                 int d=m-deduction;
+		 			                 int y=daily*d;
+		 			                 int e=daily*deduction;
+		 			                 int f=a+b+c;
+		 			                 int gross=a+b+c+daily*m;
+		 			                 int netpay=a+b+c+y;
+		 			                 int g=netpay-incentives[12]-incentives[13];
+		 			                 int h=e+incentives[12]+incentives[13];
+		 			                 LocalDate dateObject;
+		 			                 dateObject = LocalDate.now(); 
+		 			                 System.out.println("\nPeriod: 2nd period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[7]
+		 			                         + "\t\t\tPosition: "+Jobposition[7]
+		 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+		 			                         +"\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e+""
+		 			                         +"\n"+sssphilhealth[0]+"\t\t\t\t"+incentives[12]+"\n"+sssphilhealth[1]
+		 			                         +"\t\t\t"+incentives[13]+"\n____________________________________________________________________\nTotal deduction:\t\t"+h
+		 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+		 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+f
+		 			                 +"\n\nGross Pay:\t"+gross+"\n\nNet Pay:\t"+g);
+		 			                 
+		 			                Scanner select=new Scanner (System.in);
+		 			                System.out.println("Would you like to select another employee? Y/N ");
+		 			                while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+						                	Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		 		            	   
+		 		            	   
+		 		            	   
+		 		               } else { System.out.println("Invalid Input"); }
+		 		               
+		   		              	if (jerry >= 1) {jerry--; break;}
+						   		  }	
+		   		             		
+		   		             		
+		             		
+		   		             	} else if (emply.equals("9")){
+		   		             		
+		   		             	System.out.println("\n"+employee[8]+" | "+Jobposition[8]);
+		   		             	
+		   		                System.out.print("Select a period\n A. 1st period\n B. 2nd period");
+		   		              	System.out.println("  ");
+			   		              	
+			   		            while(true) {
+	   		                    Scanner date=new Scanner (System.in);
+		 		                System.out.print(" > ");
+		 		                String datenow=date.nextLine();
+		 		                
+		 		               if (datenow.equalsIgnoreCase("A")){
+		 			               Scanner mon=new Scanner (System.in);
+		 			               System.out.print("Enter a month\n>> ");
+		 			               String month=mon.nextLine();
+
+		 			              int deduction = 0;
+					                 
+					                 do {
+					                	 Scanner input1 =new Scanner (System.in);
+					                	 
+					                	 try {
+				                		 System.out.print("Check for absences: ");
+					                	 deduction=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 int overtime = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for overtime: ");
+					                	 overtime=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 int holidays = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for holidays: ");
+					                	 holidays=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 
+					                 int withleave=0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for leave with pay: ");
+					                	 withleave=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+		 			               
+		 			               
+		 			                 int m=13;
+		 			                 int daily=200;
+		 			                 int a=daily*holidays;
+                                      int j=a*2;
+		 			                 int b=daily*overtime;
+		 			                 int c=daily*withleave;
+		 			                 int d=m-deduction;
+		 			                 int y=daily*d;
+		 			                 int e=daily*deduction;
+		 			                 int gross=a+b+c;
+		 			                 int f=a+b+c+daily*m;
+		 			                 int netpay=a+b+c+y;
+		 			                 LocalDate dateObject;
+		 			                 dateObject = LocalDate.now(); 
+		 			                 System.out.println("\nPeriod: 1st period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[8]+ "\t\t\tPosition: "+Jobposition[8]
+		 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+		 			                         + "\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e
+		 			                         +"\n____________________________________________________________________\nTotal deduction:\t\t"+e
+		 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+		 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+gross
+		 			                 +"\n\nGross Pay:\t"+f+"\n\nNet Pay:\t"+netpay);
+		 		                
+		 			                Scanner select=new Scanner (System.in);
+		 			                System.out.println("Would you like to select another employee? Y/N ");
+		 			                while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+                                            Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		 			                 
+		 			                 
+		 			                 
+		 			                 
+		 		              } else if (datenow.equalsIgnoreCase("B")){     
+		 			                 
+		 		            	 Scanner mon=new Scanner (System.in);
+		 			               System.out.print("Enter a month\n>> ");
+		 			               String month=mon.nextLine();
+		 			                
+		 			              int deduction = 0;
+					                 
+					                 do {
+					                	 Scanner input1 =new Scanner (System.in);
+					                	 
+					                	 try {
+				                		 System.out.print("Check for absences: ");
+					                	 deduction=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 int overtime = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for overtime: ");
+					                	 overtime=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 int holidays = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for holidays: ");
+					                	 holidays=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 
+					                 int withleave=0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for leave with pay: ");
+					                	 withleave=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+		 			               
+		 			                 int m=13;
+		 			                 int daily=200;
+		 			                 int a=daily*holidays;
+                                      int j=a*2;
+		 			                 int b=daily*overtime;
+		 			                 int c=daily*withleave;
+		 			                 int d=m-deduction;
+		 			                 int y=daily*d;
+		 			                 int e=daily*deduction;
+		 			                 int f=a+b+c;
+		 			                 int gross=a+b+c+daily*m;
+		 			                 int netpay=a+b+c+y;
+		 			                 int g=netpay-incentives[12]-incentives[13];
+		 			                 int h=e+incentives[12]+incentives[13];
+		 			                 LocalDate dateObject;
+		 			                 dateObject = LocalDate.now(); 
+		 			                 System.out.println("\nPeriod: 2nd period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[8]
+		 			                         + "\t\t\tPosition: "+Jobposition[8]
+		 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+		 			                         +"\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e+""
+		 			                         +"\n"+sssphilhealth[0]+"\t\t\t\t"+incentives[12]+"\n"+sssphilhealth[1]
+		 			                         +"\t\t\t"+incentives[13]+"\n____________________________________________________________________\nTotal deduction:\t\t"+h
+		 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+		 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+f
+		 			                 +"\n\nGross Pay:\t"+gross+"\n\nNet Pay:\t"+g);
+		 			                 
+		 			                Scanner select=new Scanner (System.in);
+		 			                System.out.println("Would you like to select another employee? Y/N ");
+		 			                while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+						                	Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		 			                 
+		 			                 
+		 			                 
+		 		               } else { System.out.println("Invalid Input"); }
+		 		                
+		 		                
+		 		                
+		   		              	
+		 		               if (jerry >= 1) {jerry--; break;}
+						   		  }	
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		             		
+		   		             	} else if (emply.equals("10")){
+		   		             		
+		   		             	System.out.println("\n"+employee[9]+" | "+Jobposition[9]);
+		   		             	
+		   		                System.out.print("Select a period\n A. 1st period\n B. 2nd period");
+		   		              	System.out.println("  ");
+		   		              	
+	   		              		while(true) {
+	   		                    Scanner date=new Scanner (System.in);
+		 		                System.out.print(" > ");
+		 		                String datenow=date.nextLine(); 
+		 		                
+		 		               if (datenow.equalsIgnoreCase("A")){
+		 		            	  Scanner mon=new Scanner (System.in);
+		 			               System.out.print("Enter a month\n>> ");
+		 			               String month=mon.nextLine();
+		 			               
+		 			               
+		 			              int deduction = 0;
+					                 
+					                 do {
+					                	 Scanner input1 =new Scanner (System.in);
+					                	 
+					                	 try {
+				                		 System.out.print("Check for absences: ");
+					                	 deduction=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 int overtime = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for overtime: ");
+					                	 overtime=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 int holidays = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for holidays: ");
+					                	 holidays=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 
+					                 int withleave=0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for leave with pay: ");
+					                	 withleave=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);  
+		 			               
+		 			                 int m=13;
+		 			                 int daily=200;
+		 			                 int a=daily*holidays;
+                                      int j=a*2;
+		 			                 int b=daily*overtime;
+		 			                 int c=daily*withleave;
+		 			                 int d=m-deduction;
+		 			                 int y=daily*d;
+		 			                 int e=daily*deduction;
+		 			                 int gross=a+b+c;
+		 			                 int f=a+b+c+daily*m;
+		 			                 int netpay=a+b+c+y;
+		 			                 LocalDate dateObject;
+		 			                 dateObject = LocalDate.now(); 
+		 			                 System.out.println("\nPeriod: 1st period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[9]+ "\t\t\tPosition: "+Jobposition[9]
+		 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+		 			                         + "\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e
+		 			                         +"\n____________________________________________________________________\nTotal deduction:\t\t"+e
+		 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+		 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+gross
+		 			                 +"\n\nGross Pay:\t"+f+"\n\nNet Pay:\t"+netpay);
+		 			                 
+		 			                Scanner select=new Scanner (System.in);
+		 			                System.out.println("Would you like to select another employee? Y/N ");
+		 			                while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+                                            Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		 			                 
+		 			                 
+		 		               } else if (datenow.equalsIgnoreCase("B")){ 
+		 		            	   
+		 		            	  Scanner mon=new Scanner (System.in);
+		 			               System.out.print("Enter a month\n>> ");
+		 			               String month=mon.nextLine();
+		 			                 
+		 			              int deduction = 0;
+					                 
+					                 do {
+					                	 Scanner input1 =new Scanner (System.in);
+					                	 
+					                	 try {
+				                		 System.out.print("Check for absences: ");
+					                	 deduction=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 int overtime = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for overtime: ");
+					                	 overtime=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 int holidays = 0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for holidays: ");
+					                	 holidays=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+					                 
+					                 
+					                 
+					                 
+					                 int withleave=0;
+					                 do {
+					                	 Scanner input1=new Scanner (System.in);
+					                	 
+					                	 try {
+					                	 System.out.print("Check for leave with pay: ");
+					                	 withleave=input1.nextInt();
+					                	 christian = false;
+					                 
+					                	 } catch (Exception e) {
+					                		 System.out.println("Please enter a number, please try again.");
+					                		 christian = true;
+					                 
+					                	 }
+					                 
+					                 
+					                 } while (christian);
+		 			               
+		 			               
+		 			                 int m=13;
+		 			                 int daily=200;
+		 			                 int a=daily*holidays;
+                                      int j=a*2;
+		 			                 int b=daily*overtime;
+		 			                 int c=daily*withleave;
+		 			                 int d=m-deduction;
+		 			                 int y=daily*d;
+		 			                 int e=daily*deduction;
+		 			                 int f=a+b+c;
+		 			                 int gross=a+b+c+daily*m;
+		 			                 int netpay=a+b+c+y;
+		 			                 int g=netpay-incentives[12]-incentives[13];
+		 			                 int h=e+incentives[12]+incentives[13];
+		 			                 LocalDate dateObject;
+		 			                 dateObject = LocalDate.now(); 
+		 			                 System.out.println("\nPeriod: 2nd period\t\t\tDate Today: "+dateObject+"\nMonth: "+month+"\nName: "+employee[9]
+		 			                         + "\t\t\tPosition: "+Jobposition[9]
+		 			                         +"\n\t\t\t\t\tRate perday: "+daily+"\n\n\t\tPAY SLIP"
+		 			                         +"\n____________________________________________________________________\nDeductions\n\nAbsences:\t\t\t"+e+""
+		 			                         +"\n"+sssphilhealth[0]+"\t\t\t\t"+incentives[12]+"\n"+sssphilhealth[1]
+		 			                         +"\t\t\t"+incentives[13]+"\n____________________________________________________________________\nTotal deduction:\t\t"+h
+		 			                         +"\n\nOvertime:\t\t\t"+b+"\nDouble pay:\t\t\t"+j+"\nLeave w/ pay:\t\t\t"+c
+		 			                         +"\n____________________________________________________________________\nTotal:\t\t\t\t"+f
+		 			                 +"\n\nGross Pay:\t"+gross+"\n\nNet Pay:\t"+g);
+		 			                 
+		 			                Scanner select=new Scanner (System.in);
+		 			                System.out.println("Would you like to select another employee? Y/N ");
+		 			                while (true) {
+						                 System.out.print("  > ");
+						                 String selecta=select.nextLine();
+						                 
+						                 if (selecta.equalsIgnoreCase("y")) {
+						                	 jerry+=2;
+				 		                      break;
+						                 } else if (selecta.equalsIgnoreCase("n")) {
+                                            Scanner chris=new Scanner (System.in);
+                                            System.out.print("Do you Want To Log Out Y/N?"); 
+                                            String  logout = chris.nextLine();   
+
+						                	if (logout.equalsIgnoreCase("y")){
+                                                jerry+=4;
+                                                System.out.println("Logged Out!");
+                                                break;
+
+                                            } else if (logout.equalsIgnoreCase("n")) {
+                                                jerry+=2;
+                                                break;
+
+
+                                            } else { System.out.println("Invalid Input");}
+
+                                            
+                                        
+						                 } else { System.out.println("Invalid input"); } 
+						                 
+						                 }
+		 		            	   
+		 		            	   
+		 		               } else { System.out.println("Invalid Input"); }
+		 		                
+		 		                
+		 		                
+		 		                
+		 		               if (jerry >= 1) {jerry--; break;}
+						   		  }		
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		             		
+		   		             	} else { System.out.println("Invalid input, please try again"); }
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+		   		             		
+	        		        if (jerry >= 1) {jerry--; break;}
+		             		}	
+	        		 
+         		if (jerry >= 1) {jerry--; break;}
+	        	 }
+	        	 
+	        	 
+	        	 
+	         } else { System.out.println("Invalid username or password, please try again"); }
+
+	    if (jerry >= 1) {jerry--;;}
+		}
+	}
+
+}
